@@ -1,0 +1,19 @@
+package com.cyberLife.Czolg.Listeners;
+
+import com.cyberLife.Czolg.Data.PlayerMeneger;
+import com.cyberLife.Czolg.Main.Main;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+
+public class JoinEvent implements Listener {
+    private static final PlayerMeneger playerMeneger = Main.getPlayerMeneger();
+
+    @EventHandler
+    public void joinEvent(PlayerJoinEvent event){
+        Player player = event.getPlayer();
+
+        playerMeneger.join(player);
+    }
+}

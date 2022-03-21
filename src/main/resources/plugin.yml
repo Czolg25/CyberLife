@@ -1,0 +1,12 @@
+name: CyberLife
+author: Czolg1
+version: 1.0
+api-version: 1.18
+main: com.cyberLife.Czolg.Main.Main
+commands:
+  playertime:
+    description: show player time
+    permission: cyberlife.playertime
+  playertimeset:
+    description: reset player time
+    permission: cyberlife.playertimeset
